@@ -1,0 +1,86 @@
+.member{
+        color:#848484;
+        
+        .member-menu{
+                margin-top: 50px;
+                .member-menu-item{
+                        cursor: pointer;
+                        &:hover p{
+                                border-bottom: solid 1px $dark-brown;
+                        }
+                }
+
+                
+               
+        }
+       
+        
+}
+
+.member-profile{
+        max-width: 255px;
+        // order: 1;
+        i{
+                font-size: 24px;
+        }
+        h4{
+                font-size: 16px;
+        }
+        p{
+                margin-right: 20px;
+        }
+        .point{
+               font-size: 14px;
+        }
+}
+
+.member-modify{
+        max-width: 635px;
+        margin-top: 40px;
+        h4{
+                color:#000;
+                font-size: 16px;
+        }
+        .inputSize{
+                @include size(350px,38px);
+                border: solid 1px #CED4DA;
+                outline-color: $dark-brown;
+                border-radius: 4px;
+                @include mobile{
+                        width: 255px;
+                }
+        }
+        .selectSize{
+                @include size(160px,38px);
+               
+        }
+        select{
+                color:#848484;
+        }
+
+        .ml_107{
+                margin-left: 107px;
+        }
+        .small-select{
+                @include mobile{
+                        width: 80px;
+                }
+        }
+        label{
+                margin-right: 40px;
+        }
+
+        .member-profileModilfy{
+            p{
+                    margin-right: 50px;
+            }    
+        }
+
+       
+
+        .comfirmPassword{
+                label{
+                        margin-right: 24px;
+                }
+        }
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'PERFUME</title>
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/all.css">
+    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+
+</head>
+<body>
+    <header class="header container align-items-center">
+        <h1>
+            <a href="./index.html">
+                 <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfume.png?raw=true" alt="logo"> 
+            </a>
+          
+        </h1>        
+        <ul class="menu  d-flex align-items-center m-0 ">
+            <li class="menu-list d-none d-md-block">
+                <a href="./productList.html" class="pe-4 py-3">
+                    <i class="fas fa-store"></i>
+                    <span class="h5">Product</span>
+                </a>   
+            </li>
+            <li class="menu-list d-none d-md-block">
+                <a href="./logIn.html" class="pe-4 py-3">
+                    <i class="fas fa-user"></i>
+                    <span class="h5">log in</span>
+                </a>             
+            </li>
+            <li class="menu-list d-none d-md-block">
+                <a href="" class="pe-4 py-3">
+                     <i class="fas fa-heart"></i>
+                     <span class="h5">Wishlist</span>
+                </a>
+            </li>
+            <li class="menu-list">
+                <a href="" class="pe-4 py-3">
+                    <i class="fas fa-shopping-cart position-relative">
+                        <span class="mobile-cartNumber d-md-none p-1  position-absolute">10</span>
+                    </i>
+                    <span class="h5 d-none d-md-inline-block">Cart<span>(3)</span></span>    
+                </a>
+            </li>
+            <li class="mobile-menuButton">
+                <i class="fas fa-bars d-md-none"></i>
+                <ul class="mobile-menu d-md-none p-0">
+                    <li class="mobile-list">
+                        <a href="" class="py-2 text-center">Product</a>
+                    </li>
+                    <li class="mobile-list">
+                        <a href="" class="py-2 text-center">Wishlist</a>
+                    </li>
+                    <li class="mobile-list">
+                        <a href="" class="py-2 text-center">Blog</a>
+                    </li>
+                    <li class="mobile-list">
+                        <a href="" class="py-2 text-center">Contact</a>
+                    </li>
+                    <li class="mobile-list">
+                        <a href="" class="py-2 text-center">log in</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </header>
+    <nav class="header-nav ">
+        <ul class="container d-none d-md-flex p-0">
+            <li class="header-brand-item">
+                <a href="">CHANEL</a>
+            </li>
+            <li class="header-brand-item">
+                <a href="">Jo Malone</a>
+            </li>
+            <li class="header-brand-item">
+                <a href="">Curology</a>
+            </li>
+            <li class="header-brand-item">
+                <a href="">Dior</a>
+            </li>
+            <li class="header-brand-item">
+                <a href="">Chloe</a>
+            </li>
+            <li class="header-brand-item">
+                <a href="">ZARA</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="member container d-flex flex-column align-items-center flex-md-row align-items-md-start justify-content-md-between">
+        <section class="member-menu d-md-inline-block">
+            <h3 class="fs-5 mb-4 d-none d-md-block">會員中心</h3>
+            <ul class="member-menu-list p-0 d-flex justify-content-around flex-md-column">
+                <li class="member-menu-item mb-3 mx-2">
+                    <p class="m-0 d-inline-block">會員資料修改</p>
+                </li>
+                <li class="member-menu-item mb-3 mx-2">
+                    <p class="m-0 d-inline-block">訂單查詢</p>
+                </li>
+                <li class="member-menu-item mb-3 mx-2">
+                    <p class="m-0 d-inline-block">退／換貨申請</p>
+                </li>
+            </ul>
+        </section>
+        <section class="member-profile order-md-1">
+            <i class="fas fa-user"></i>
+            <h4 class="d-inline-block">會員編碼 T00020080615</h4>
+            <ul class="p-0 m-0">
+                <li class="d-flex">
+                    <p>購物車</p>
+                    <span>56</span>
+                </li>
+                <li class="d-flex">
+                    <p>我的收藏</p>
+                    <span>23</span>
+                </li>
+                <li class="d-flex">
+                    <p>完成訂單</p>
+                    <span>8</span>
+                </li>
+                <li class="d-flex">
+                    <p>會員紅利</p>
+                    <span>2680</span>
+                </li>
+                <li class="d-flex">
+                    <p>邀請碼</p>
+                    <span>TK2075</span>
+                </li> 
+            </ul>
+            
+            <span class="point fw-light">新戶輸入邀請碼即可獲贈紅利點數1000點</span>
+               
+        </section>
+        <section class="member-modify">
+            
+            <form action="">
+                <h4>個人資料修改</h4>
+                <hr>
+                <ul class="member-profileModilfy p-0">
+                    <li class="d-flex mb-3">
+                        <p>會員帳號</p>
+                        <span >email@example.com</span>
+                    </li>
+                    <li class="mb-3">
+                        <label for="member-name">會員姓名</label>
+                        <input type="text" id="member-name" class="inputSize">
+                    </li>
+                    <li class="mb-3">
+                        <label for="member-gender">會員性別</label>
+                        <select name="member-gender" id="member-gender">
+                            <option value="male">男</option>
+                            <option value="female">女</option>
+                        </select>
+                    </li>
+                    <li class="mb-3">
+                        <label for="member-email">電子信箱</label>
+                        <input type="text" placeholder="email@example.com" id="member-email" class="inputSize">
+                    </li>
+                    <li class="mb-3">
+                        <label for="member-phone">手機號碼</label>
+                        <input type="text" id="member-phone" class="inputSize">
+                    </li>
+                    <li class="mb-3">
+                        <label for="address">聯絡地址</label>
+                        <select name="address" id="address" class="selectSize  mb-2">
+                            <option value="">台灣及離島</option>
+                        </select><br>
+                        <select name="" id="" class="selectSize ml_107 small-select">
+                            <option value="">高雄市</option>
+                        </select>
+                        <select name="" id="" class="selectSize small-select">
+                            <option value="">鹽埕區</option>
+                        </select><br>
+                        <input type="checkbox" checked="checked" class="ml_107" id="receive-info">
+                        <label for="receive-info" class="m-0">我願意收到最新優惠情報</label>
+                    </li>
+                    <li class="mb-3">
+                        <label for="">配送地址</label>
+                        <select name="" id="" class="selectSize mb-2 ">
+                            <option value="">台灣及離島</option>
+                        </select><br>
+                        <select name="" id="" class="selectSize ml_107 small-select">
+                            <option value="">高雄市</option>
+                        </select>
+                        <select name="" id="" class="selectSize small-select">
+                            <option value="">鹽埕區</option>
+                        </select><br>
+                    </li>
+                </ul>
+            </form>
+            
+            <form action="">
+                <h4>修改密碼</h4>
+                <hr>
+                <ul class="password-modifiy p-0">
+                    <li class="mb-3">
+                        <label for="old-password">舊密碼</label>
+                        <input type="text" name="" id="old-password" class="inputSize">
+                    </li>
+                    <li class="mb-3">
+                        <label for="new-password">新密碼</label>
+                        <input type="text" name="" id="new-password" class="inputSize">
+                    </li>
+                    <li class="comfirmPassword class="mb-3"">
+                        <label for="comfirm-password">確認密碼
+                        </label>
+                        <input type="text" name="" id="comfirm-password" class="inputSize">
+                    </li>
+                </ul>
+            </form>
+        </section>
+
+    </main>
+
+
+
+    
+    <footer class="footer">
+        <ul class="nav d-flex justify-content-center justify-content-md-between align-items-center container">
+            <li class="d-flex fw-light align-items-center">
+                <a href="./index.html">
+                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfumewhite.png?raw=true" alt="">
+                </a>
+                <span>© 2020. All Rights Reserved.</span>
+            </li>
+            <li >
+                <ul class="footer-menu d-none d-md-flex ">
+                    <li class="footer-menu-item">
+                        <a href="./productList.html">Product</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="">Blog</a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

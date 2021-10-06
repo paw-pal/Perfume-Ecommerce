@@ -1,0 +1,26 @@
+@mixin mobile{
+    @media(max-width: 768px){
+        @content
+    }
+};
+
+@mixin flex-jcc{
+    display: flex;
+    justify-content: center;
+};
+
+@mixin flex-jcsb{
+    display:flex;
+    justify-content: space-between;
+}
+
+@mixin size($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin MaxSize($maxWidth,$height){
+    max-width: $maxWidth;
+    height: $height;
+}
+

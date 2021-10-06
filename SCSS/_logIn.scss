@@ -1,0 +1,72 @@
+.login{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    .login-img{
+        @include MaxSize(730px,730px);
+        @include mobile{
+            @include size(345px,220px);
+        }
+        img{
+            @include size(730px,730px);
+            object-fit: cover;
+            @include mobile{
+                @include size(345px,220px);
+            }
+        }
+    }
+    form{
+        width: 360px;
+    }
+
+    input{
+        @include size(350px,38px);
+        border:solid 3px #CED4DA;
+        outline: none;
+        border-radius: 4px;
+    }
+
+    .login-button{
+        .forgetPassword{
+            a{
+            color:$light-brown;
+            font-weight: bold;
+            }
+        }
+
+        .signupLogin{
+            button{
+                @include size(65px,38px);
+                border-radius: 4px;
+            }
+            .signUp{
+                border: solid 2px $light-brown;
+                background-color: #fff;
+                a{
+                     color:$light-brown;
+                }
+                &:hover{
+                    background-color: $light-brown;
+                }
+                &:hover a{
+                    color:#fff;
+                }
+            }
+
+            .logIn{
+                border:none;
+                background-color:$dark-brown;
+                a{
+                    color:#fff;
+                }
+                &:hover{
+                    background-color: #fff;
+                    border: solid 2px $dark-brown;
+                }
+                &:hover a{
+                    color:$dark-brown;
+                }
+            }
+        }
+        
+    }
+}

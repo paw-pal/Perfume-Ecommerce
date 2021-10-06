@@ -1,0 +1,95 @@
+.product{
+    .product-img{
+        @include MaxSize(730px,460px);
+        margin-bottom: 30px;
+        @include mobile{
+            width: 345px;
+        }
+        img{
+            @include size(730px,460px);
+            object-fit: cover;
+            @include mobile{
+                width: 345px;
+            }
+        }
+    }
+
+    .product-content{
+        margin-top: 80px;
+    }
+    
+
+    .product-item-text{
+        max-width: 350px;
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .product-item-content{
+       
+        .putin-cart{
+            @include size(350px,60px);
+            background-color: $dark-brown;
+            border-radius:0 4px 4px 0 ;
+            .product-select{
+                @include size(45%,100%);
+                border:solid 3px $light-brown;
+                outline: none;
+                border-radius: 4px 0 0 4px;
+                border-right: none;
+            }
+            button{
+                @include size(52%,100%);
+                background-color: $dark-brown;
+                color:#fff;
+                border:none;
+            }
+        }
+        .collection{
+            color: #000;
+            cursor: pointer;
+            i{
+                font-size: 20px;
+                color: $dark-brown;
+            }
+            
+        }
+        .shopping-note{
+            margin-top: 80px;
+        }
+    }
+
+    .product-thin-img{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        @include mobile{
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0;
+        }
+        div{
+            @include MaxSize(350px,640px);
+            @include mobile{
+                width: 345px;
+            }
+            img{
+                @include size(350px,640px);
+                object-fit: cover;
+                @include mobile{
+                    width: 345px;
+                }
+            }
+        }
+    }
+
+    .productPic{
+        @include size(345px,220px);
+        img{
+            @include size(345px,220px);
+            object-fit: cover;
+
+        }
+    }
+}

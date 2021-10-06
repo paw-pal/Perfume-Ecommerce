@@ -1,0 +1,8 @@
+.member {
+  color: #848484;
+}
+
+.member .member-menu .member-menu-item:hover p {
+  border-bottom: solid 1px;
+}
+/*# sourceMappingURL=member.css.map */
