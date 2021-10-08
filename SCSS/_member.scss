@@ -5,6 +5,9 @@
                 margin-top: 50px;
                 .member-menu-item{
                         cursor: pointer;
+                        p{
+                         border-bottom:solid 1px transparent ;
+                        }                        
                         &:hover p{
                                 border-bottom: solid 1px $dark-brown;
                         }

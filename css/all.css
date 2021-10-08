@@ -182,6 +182,7 @@ img {
 .topProduct-item .topProduct-img {
   width: 50%;
   height: 555px;
+  overflow: hidden;
 }
 
 .topProduct-item .topProduct-img img {
@@ -189,6 +190,8 @@ img {
   height: 555px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: .6s;
+  transition: .6s;
 }
 
 @media (max-width: 768px) {
@@ -198,6 +201,11 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
   }
+}
+
+.topProduct-item .topProduct-img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -565,6 +573,7 @@ img {
   color: #000;
   font-size: 20px;
   padding: 5px;
+  border: solid 2px transparent;
 }
 
 .pagination a:hover {
@@ -784,15 +793,7 @@ img {
 
 .login .login-button .signupLogin .logIn a {
   color: #fff;
-}
-
-.login .login-button .signupLogin .logIn:hover {
-  background-color: #fff;
-  border: solid 2px #916000;
-}
-
-.login .login-button .signupLogin .logIn:hover a {
-  color: #916000;
+  background-color: #916000;
 }
 
 .member {
@@ -805,6 +806,10 @@ img {
 
 .member .member-menu .member-menu-item {
   cursor: pointer;
+}
+
+.member .member-menu .member-menu-item p {
+  border-bottom: solid 1px transparent;
 }
 
 .member .member-menu .member-menu-item:hover p {
